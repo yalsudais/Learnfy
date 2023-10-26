@@ -16,8 +16,8 @@ main{
   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   min-height: 100vh;
   display: flex;
-  align-items:baseline;
-  justify-content:baseline;
+  align-items:center;
+  justify-content:center;
   font-family: sans-serif;
 }
 
@@ -137,9 +137,9 @@ form .link-text a{
 }
 
 .container-images{
-  width:100% ;
-  height: 100%;
-  position: relative;
+  width:0 ;
+  height: 0;
+  position:relative;
 
 }
 
