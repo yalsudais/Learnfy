@@ -70,6 +70,67 @@ section{
   font-size : 2rem ;
   opacity: 0.9;
   margin-bottom: 20px;
-  
+  position: relative;
 }
 
+.title h1  ::before{
+  content: '';
+  position: absolute;
+  left : 0;
+  bottom: -10px;
+  width : 100px;
+  height: 4px;
+  background-color: #fff;
+}
+
+
+form{
+  padding: 1px;
+}
+
+
+form .input-box {
+  width : 100% ;
+  margin-top: 20px;
+
+}
+
+form .input-box input{
+  width: 100%;
+  background: rgba(125, 122, 122 , 0.2);
+  border : 1px solid rgba(125,122,122,0.2);
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  coloe:rgba(0,0,0,0.9);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.04);
+}
+
+form .input-box input ::placeholder{
+  color : rgba(0, 0, 0, 0.3);
+
+}
+
+form .input-box input[type='submit']{
+  background: rgba(125,122,122,0.6);
+  font-weight: 700;
+  color :#1555bd ;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+
+form .link-text{
+  color: rgba(47, 98, 150, 0.5);
+  margin-top: 15px;
+  font-size: 0.85rem;
+}
+
+form .link-text a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 700;
+  
+}
