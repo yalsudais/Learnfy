@@ -136,15 +136,4 @@ form .link-text a{
   
 }
 
-.container-images{
-  width:0 ;
-  height: 0;
-  position:relative;
-
-}
-
-.container-images img{
-  position: absolute;
-  bottom: 0;
-}
 
