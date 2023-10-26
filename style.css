@@ -97,7 +97,7 @@ form .input-box {
 
 form .input-box input{
   width: 100%;
-  background: rgba(125, 122, 122 , 0.2);
+  background: rgb(245, 242, 242);
   border : 1px solid rgba(125,122,122,0.2);
   outline: none;
   padding: 10px 20px;
@@ -116,21 +116,21 @@ form .input-box input ::placeholder{
 form .input-box input[type='submit']{
   background: rgba(241, 236, 236, 0.724);
   font-weight: 700;
-  color :#1555bd ;
+  color :#4679ca ;
   margin-bottom: 20px;
   cursor: pointer;
 }
 
 
 form .link-text{
-  color: rgba(47, 98, 150, 0.5);
+  color: rgba(248, 251, 254, 0.927);
   margin-top: 15px;
   font-size: 0.85rem;
 }
 
 form .link-text a{
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.3);
+  color: #4679ca;
   font-size: 700;
   
 }
