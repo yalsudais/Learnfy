@@ -17,7 +17,7 @@ main{
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content:space-between;
   font-family: sans-serif;
 }
 
@@ -26,6 +26,7 @@ main{
   min-height: var(--height);
   width: var(--width);
   position: relative;
+
 }
 
 section{
@@ -134,3 +135,16 @@ form .link-text a{
   font-size: 700;
   
 }
+
+.container-images{
+  width:45% ;
+  height: 90%;
+  position: relative;
+
+}
+
+.container-images img{
+  position: absolute;
+  bottom: 0;
+}
+
