@@ -37,9 +37,11 @@ section{
   border-right : 1px solid rgba(1, 19, 51, 0.3);  
   border-bottom : 1px solid rgba(1, 19, 51, 0.2);
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2rem);
+  padding: 3rem;
 }
 
-
+/*
 .circle1 , .circle2{
   background: rgba(1, 19, 51, 0.4);
   height: 250px;
@@ -56,4 +58,18 @@ section{
 .circle2{
   bottom : -70% ;
   left : -70% ;
+}*/
+
+
+.title{
+  width:100%;
 }
+.title h1{
+  color : #FFF ;
+  font-weight: 600;
+  font-size : 2rem ;
+  opacity: 0.9;
+  margin-bottom: 20px;
+  
+}
+
