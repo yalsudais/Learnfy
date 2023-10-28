@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #add8e6; 
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        header img {
+            max-width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 70px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 70px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 70px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        #success-message {
+            color: green;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo">
+        <h1>Reset Password</h1>
+    </header>
+    <div class="container">
+        <form class="form" onsubmit="resetPassword(event)">
+            <input type="password" id="oldPassword" placeholder="Old Password" required>
+            <input type="password" id="newPassword" placeholder="New Password" required>
+            <input type="password" id="confirmNewPassword" placeholder="Confirm New Password" required>
+            <button type="submit" class="button">Reset Password</button>
+            <p id="success-message" style="display: none;">Password reset successfully!</p>
+        </form>
+    </div>
+
+    <script>
+        function resetPassword(event) {
+            event.preventDefault();
+           
+            var newPassword = document.getElementById("newPassword").value;
+            var confirmNewPassword = document.getElementById("confirmNewPassword").value;
+            var successMessage = document.getElementById("success-message");
+
+            if (newPassword && confirmNewPassword && newPassword === confirmNewPassword) {
+                successMessage.style.display = "block";
+                setTimeout(function () {
+                    window.location.href = "profile.html"; 
+                }, 1000);
+            } else {
+                successMessage.style.display = "";
+            }
+        }
+    </script>
+</body>
+</html>
+
