@@ -1,6 +1,4 @@
 
-
-<!-- /*this is it /* -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <style>
+      
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -87,19 +86,15 @@
         <div class="form">
             <input type="email" id="email" placeholder="Email" required>
             <input type="password" id="password" placeholder="Password" required>
-            <a href="s.html">Login</button></a>
-            <button type="submit" onclick="login()">Login</button>
-            
-            
+            <button type="button" onclick="login()">Login</button>
         </div>
         <div class="forgot-password">
-            <a href="#">Forgot Password?</a>
+            <a href="forgot.html">Forgot Password?</a>
         </div>
         <div class="sign-up">
-            <p>Don't have an account? <a href="#">Sign Up</a></p>
+            <p>Don't have an account? <a href="sign.html">Sign Up</a></p>
         </div>
         <div class="error-message" id="error-message"></div>
-      
     </div>
 
     <script>
@@ -111,20 +106,10 @@
             if (email === "" || password === "") {
                 errorMessage.textContent = "Email and password are required!";
             } else {
-                
+               
+                window.location.href = "s.html"; 
             }
         }
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
- 
