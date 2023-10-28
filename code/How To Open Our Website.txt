@@ -1,0 +1,2 @@
+First, open the whole folder in VS
+then open "a.html" to show the whole website.
