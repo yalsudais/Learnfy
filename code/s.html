@@ -118,6 +118,33 @@
             </div>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.querySelector('.search-input');
+
+            searchInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    const searchText = searchInput.value.toLowerCase();
+                    switch (searchText) {
+                        case 'java':
+                            window.location.href = 'java.html';
+                            break;
+                        case 'software engineering':
+                            window.location.href = 'SWE.html';
+                            break;
+                        case 'digital logic design':
+                            window.location.href = 'DLD.html';
+                            break;
+                        default:
+                            alert('Subject not found');
+                            break;
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
+
 
